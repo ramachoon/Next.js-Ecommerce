@@ -1,9 +1,13 @@
 import './globals.css'
-import { Nunito } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
-const nunito = Nunito({ subsets: ['latin'] })
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+})
 
 export const metadata = {
   title: 'Next.js E-commerce website',
@@ -12,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>
+      <body className={poppins.className}>
         <Header />
 
         <main>

@@ -10,7 +10,7 @@
     }
 
     body {
-        @apply flex flex-col
+        @apply flex flex-col text-[#333333]
     }
 
     body>main {

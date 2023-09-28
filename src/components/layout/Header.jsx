@@ -5,21 +5,21 @@ import HeaderCartBtn from "@/components/ui/HeaderCartBtn"
 
 export default function Header() {
   return (
-    <div className="h-24 border-b border-default">
-      <div className="container h-full flex justify-between items-center">
+    <div className="h-24 border-b border-default max-sm:h-36">
+      <div className="container h-full flex justify-between items-center flex-wrap">
 
         {/* Logo area */}
-        <div>
+        <div className="order-1 max-sm:order-1">
           <Logo />
         </div>
 
         {/* Searchbar area */}
-        <div>
+        <div className="max-sm:w-full order-2 max-sm:order-3">
           <SearchBar />
         </div>
 
         {/* Cart & Signin */}
-        <div className="h-full flex items-center gap-1.5">
+        <div className="flex items-center gap-1.5 order-3 max-sm:order-2">
           <HeaderCartBtn />
           <HeaderSinginBtn />
         </div>

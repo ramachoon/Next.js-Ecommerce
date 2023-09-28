@@ -23,3 +23,13 @@
         @apply mx-auto px-4 max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-xl
     }
 }
+
+@layer components {
+    .search-bar {
+        @apply bg-[#f3f3f3] w-[550px] max-lg:w-[300px] max-sm:w-full max-sm:-mt-4 rounded-lg pr-12 relative transition-all border border-transparent focus-within:border-primary focus-within:rounded-b-none
+    }
+
+    .header-btn {
+        @apply flex items-center py-2 pr-4 pl-3 max-sm:p-3 cursor-pointer hover:bg-gray-100 rounded-md
+    }
+}

@@ -9,7 +9,7 @@ export default function Header() {
       <div className="container h-full flex justify-between items-center flex-wrap">
 
         {/* Logo area */}
-        <div className="order-1 max-sm:order-1">
+        <div className="order-1 max-sm:order-1 text-black">
           <Logo />
         </div>
 

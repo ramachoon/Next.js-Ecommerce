@@ -5,7 +5,7 @@ import HeaderCartBtn from "@/components/ui/HeaderCartBtn"
 
 export default function Header() {
   return (
-    <div className="h-24 border-b border-default max-sm:h-36">
+    <header className="h-24 border-b border-default max-sm:h-36">
       <div className="container h-full flex justify-between items-center flex-wrap">
 
         {/* Logo area */}
@@ -25,6 +25,6 @@ export default function Header() {
         </div>
 
       </div>
-    </div>
+    </header>
   )
 }

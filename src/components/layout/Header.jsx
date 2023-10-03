@@ -1,5 +1,5 @@
 import Logo from "@/components/ui/Logo"
-import SearchBar from "@/components/ui/SearchBar"
+import SearchBar from "@/components/SearchBar"
 import HeaderSinginBtn from "@/components/ui/HeaderSinginBtn"
 import HeaderCartBtn from "@/components/ui/HeaderCartBtn"
 

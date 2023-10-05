@@ -1,5 +1,6 @@
 import './globals.css'
 import { Poppins } from 'next/font/google'
+import Provider from '@/lib/Provider'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
@@ -17,13 +18,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Header />
+        <Provider>
+          <Header />
 
-        <main>
-          {children}
-        </main>
+          <main>
+            {children}
+          </main>
 
-        <Footer />
+          <Footer />
+        </Provider>
       </body>
     </html>
   )

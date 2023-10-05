@@ -96,11 +96,36 @@ export default function Footer() {
         {/* Footer bottom */}
         <div className="flex justify-between items-center py-6 text-sm border-t border-default/10 max-lg:flex-col max-lg:gap-y-4">
           <div className="max-lg:text-center">NEXTON &copy; 2023 | All Rights Reserved.</div>
+
+          {/* Payment icons */}
           <div className="flex gap-2 max-lg:flex-wrap max-lg:justify-center">
-            <Image src="/icons/paypal.svg" height={22} width={36} />
-            <Image src="/icons/visa.svg" height={22} width={36} />
-            <Image src="/icons/discover-card.svg" height={22} width={36} />
-            <Image src="/icons/mastercard.svg" height={22} width={36} />
+            <Image
+              src="/icons/paypal.svg"
+              height={22}
+              width={36}
+              alt="Payment method icon."
+              style={{ width: "auto", height: "auto" }}
+            />
+            <Image src="/icons/visa.svg"
+              height={22}
+              width={36}
+              alt="Payment method icon."
+              style={{ width: "auto", height: "auto" }}
+            />
+            <Image
+              src="/icons/discover-card.svg"
+              height={22}
+              width={36}
+              alt="Payment method icon."
+              style={{ width: "auto", height: "auto" }}
+            />
+            <Image
+              src="/icons/mastercard.svg"
+              height={22}
+              width={36}
+              alt="Payment method icon."
+              style={{ width: "auto", height: "auto" }}
+            />
           </div>
         </div>
 

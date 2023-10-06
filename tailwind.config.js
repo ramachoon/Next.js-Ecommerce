@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        smoke: '#f3f3f3',
+      },
       colors: {
         primary: '#2266cc',
         primaryLight: '#3478dd',

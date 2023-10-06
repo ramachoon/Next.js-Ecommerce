@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebook, FaTwitter, FaGooglePlus } from "react-icons/fa
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white/50">
+    <footer className="bg-black text-white/50 mt-12">
       <div className="container overflow-hidden">
 
         <div className="py-12 grid grid-cols-12 gap-12 max-lg:gap-x-0">

@@ -18,6 +18,7 @@ module.exports = {
       },
       borderColor: {
         default: '#e8e8e8',
+        darken: '#d1d1d1',
       },
     },
   },

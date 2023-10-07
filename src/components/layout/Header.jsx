@@ -5,8 +5,8 @@ import HeaderCartBtn from "@/components/ui/HeaderCartBtn"
 
 export default function Header() {
   return (
-    <header className="h-24 max-sm:h-36">
-      <div className="container h-full flex justify-between items-center flex-wrap">
+    <header className="h-max max-sm:h-36 border-b border-default">
+      <div className="container h-24 flex justify-between items-center flex-wrap">
 
         {/* Logo area */}
         <div className="order-1 max-sm:order-1 text-black">

@@ -6,7 +6,7 @@
 
     html,
     body {
-        @apply h-full
+        @apply h-full overflow-x-hidden
     }
 
     body {
@@ -35,5 +35,21 @@
 
     .header-btn {
         @apply flex items-center py-2 pr-4 pl-3 max-sm:p-3 cursor-pointer transition-all hover:text-primary rounded-md
+    }
+
+    .modal-backdrop {
+        @apply z-[50] fixed inset-0 overflow-y-auto flex min-h-full items-center justify-center p-4 text-center bg-black bg-opacity-30
+    }
+
+    .modal-dialog {
+        @apply w-full max-w-md text-left transform overflow-hidden rounded-lg bg-white py-10 px-6 sm:px-14 max-sm:pb-6
+    }
+
+    .modal-tab-btn {
+        @apply flex-grow outline-none cursor-pointer rounded-md py-2 max-sm:text-xs
+    }
+
+    .google-btn {
+        @apply w-full py-3 border border-darken rounded-md outline-none bg-white text-gray-700 text-sm max-sm:text-xs flex items-center justify-center gap-x-2 font-medium
     }
 }

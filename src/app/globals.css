@@ -37,12 +37,22 @@
         @apply flex items-center py-2 pr-4 pl-3 max-sm:p-3 cursor-pointer transition-all hover:text-primary rounded-md
     }
 
-    .modal-backdrop {
+    .modal-backdrop,
+    .modal-nested-backdrop {
         @apply z-[50] fixed inset-0 overflow-y-auto flex min-h-full items-center justify-center p-4 text-center bg-black bg-opacity-30
     }
 
-    .modal-dialog {
+    .modal-dialog,
+    .modal-nested-dialog {
         @apply w-full max-w-md text-left transform overflow-hidden rounded-lg bg-white py-10 px-6 sm:px-14 max-sm:pb-6
+    }
+
+    .modal-nested-backdrop {
+        @apply bg-opacity-50
+    }
+
+    .modal-nested-dialog {
+        @apply max-w-lg
     }
 
     .modal-tab-btn {

@@ -11,7 +11,10 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@reduxjs/toolkit": "^1.9.7",
+    "bcryptjs": "^2.4.3",
+    "mongoose": "^7.6.1",
     "next": "latest",
+    "next-auth": "^4.23.2",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0",

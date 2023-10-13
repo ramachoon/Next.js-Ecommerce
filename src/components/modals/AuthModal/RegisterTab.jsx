@@ -4,10 +4,26 @@ import Divider from "./ui/Divider"
 import ContinueBtn from "./ui/ContinueBtn"
 import ContinueWithGoogle from "./ui/ContinueWithGoogle"
 import ActionButtons from "./ui/ActionButtons"
+import handleRegister from "./helpers/handleRegister"
 
 export default function RegisterTab() {
+
+  const handleForm = (e) => {
+    e.preventDefault()
+    
+    // Get form data
+    const formData = new FormData(e.currentTarget)
+
+    // Extract form data
+    const email = formData.get("email")
+    const password = formData.get("password")
+
+    // Handle login
+    handleRegister(email, password)
+  }
+
   return (
-    <>
+    <form onSubmit={handleForm}>
       {/* Email input */}
       <EmailInput />
 
@@ -23,6 +39,6 @@ export default function RegisterTab() {
         <Divider />
         <ContinueWithGoogle />
       </div>
-    </>
+    </form>
   )
 }
